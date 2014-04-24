@@ -1,0 +1,15 @@
+{
+  "name": "scrupulous",
+  "version": "v1.0.0",
+  "main": "js/scrupulous.js",
+  "dependencies": {
+      "jquery": ">=1.10.2"
+  },
+  "ignore": [
+    "css",
+    "images",
+    "bower.json",
+    "index.html",
+    "js/vendor"
+  ]
+}
