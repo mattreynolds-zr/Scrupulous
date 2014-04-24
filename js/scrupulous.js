@@ -97,7 +97,8 @@
       if($(':input', $formGroup).length > 1) {
         /*
          * If we have multiple inputs in this group, and have had an error state previously, then we don't want to reset 
-         * the form-group unless we know we're valid
+         * the form-group unless we know all inputs are valid, since the class on the form group partially controls
+		 * displaying of input errors.
          */
         if($formGroup.hasClass('has-error') && ($(':input.valid', $formGroup).length !== $(':input', $formGroup).length)) {
           return;
